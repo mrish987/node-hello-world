@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Publish Docker Image to Docker Hub
           command: |
-            echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+            echo "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" | docker login -u "mrish" --password-stdin
             IMAGE_TAG="0.0.${CIRCLE_BUILD_NUM}"
             docker tag $IMAGE_NAME:latest $IMAGE_NAME:$IMAGE_TAG
             docker push $IMAGE_NAME:latest
