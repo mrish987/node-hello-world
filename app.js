@@ -8,7 +8,7 @@ const host = '0.0.0.0';
 
 app.get('/', (req, res) => {
   res.send('How is your day going? Congratulations on your Node Hello World Application built on Docker!');
-})
+});
 
 app.listen(port, host);
 console.log(`Running on http://${host}:${port}`);
